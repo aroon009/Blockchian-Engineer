@@ -268,13 +268,13 @@ We now have a contract that we've decided we like. It's got mappings, it enables
 
 How do we actually deploy this so that other people can interact with this contract?
 
-We're again going to use `Rinkeby Test Network` because that's what we used to make our first transaction. Now again, you'll need some type of test ether in your test wallet. If you get lost, you can always go to [rinkeby faucet](https://faucet.rinkeby.io/) or a better alternative would be to go to the link token contracts in the [chainlink documentation](https://docs.chain.link/docs/link-token-contracts/).
+We're again going to use `Goerli Test Network` because that's what we used to make our first transaction. Now again, you'll need some type of test ether in your test wallet. If you get lost, you can always go to [Goerli faucet](https://goerli.etherscan.io/) or a better alternative would be to go to the link token contracts in the [chainlink documentation](https://docs.chain.link/docs/link-token-contracts/).
 
 The only thing we need to change in the remix is that we need to change from JavaScript VM to Injected Web3 and Metamask will actually pop up.
 
 Injected Web3 means we're taking our metamask and injecting it into the source code of the browser.Web3 provider is needed if we want to use our own blockchain node or web3 provider. When we do inject web3, we're saying our web3 provider is our metamask, which will work perfectly for what we're trying to do.
 
-If you deploy the contract into the web3 provider, metamask will pop up asking if you want to do this transaction because, remember, we're deploying a contract, we're changing the state of the blockchain, so we have to pay a little bit of gas fee for it. We get a link to the Rinkeby Etherscan similar to what we saw before when we made a transaction. The difference here is that instead of sending ethereum to somebody, we're actually making a transaction on the blockchain to create a contract. After a short while, it'll show up in the status as "success". The number of block confirmations, which again is the number of blocks appended to the block that included our transaction,
+If you deploy the contract into the web3 provider, metamask will pop up asking if you want to do this transaction because, remember, we're deploying a contract, we're changing the state of the blockchain, so we have to pay a little bit of gas fee for it. We get a link to the Goerli Etherscan similar to what we saw before when we made a transaction. The difference here is that instead of sending ethereum to somebody, we're actually making a transaction on the blockchain to create a contract. After a short while, it'll show up in the status as "success". The number of block confirmations, which again is the number of blocks appended to the block that included our transaction,
 
 **Interacting with Deployed Contracts**
 
